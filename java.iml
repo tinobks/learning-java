@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/01-casting" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/02-funzioni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/03-funzioni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/03-operatori-aritmetici" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
