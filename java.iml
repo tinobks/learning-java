@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/03-funzioni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/03-operatori-aritmetici" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/04-operatori-comparazione" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/05-operatori-logici" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
