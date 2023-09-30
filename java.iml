@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/05-operatori-logici" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/06-if-else" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/07-switch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/08-cicli" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
