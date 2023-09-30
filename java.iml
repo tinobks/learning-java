@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/03-operatori-aritmetici" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/04-operatori-comparazione" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/05-operatori-logici" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/06-if-else" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/07-switch" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
