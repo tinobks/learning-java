@@ -1,3 +1,7 @@
+/*primo e secondo esercizio Auto sono nello stesso file in quanto entrambi
+li ho svolti facendo si che le variabili siano dichiarate come 'private',
+per renderli accessibili solo attraverso i metodi get e set.*/
+
 public class Auto {
     private int cilindrata;
     private String targa;

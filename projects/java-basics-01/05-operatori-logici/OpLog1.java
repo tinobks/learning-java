@@ -11,7 +11,7 @@ public class OpLog1 {
     public static void main(String[] args) {
         int x = 5;
         int y = 10;
-        int z = 22;
+        int z = 7;
         System.out.println("Is " + z + " between " + x + " and " + y + " ? " + isBetween(x,y,z));
     }
 }
