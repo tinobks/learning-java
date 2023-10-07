@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Array5 {
 
     //metodo per stampare la matrice
-    public static void matrixPrint(int[][] myMatrix) {
+    static void matrixPrint(int[][] myMatrix) {
         for (int[] array : myMatrix) {
             //converto ogni array di interi in un array di stringhe
             String[] stringArray = new String[array.length];
@@ -24,7 +24,7 @@ public class Array5 {
     }
 
     //metodo per scambiare righe e colonne della matrice
-    public static int[][] swapMatrix(int[][] myMatrix) {
+    static int[][] swapMatrix(int[][] myMatrix) {
         //creo un array con le caratteristiche dell'array da swappare
         int[][] swappedArray = new int[myMatrix[0].length][myMatrix.length];
         for (int i = 0; i < myMatrix.length; i++) {
@@ -37,7 +37,7 @@ public class Array5 {
     }
 
     //metodo per vedere se le righe hanno lo stesso numero di elementi
-    public static boolean sameLength(int[][] myMatrix) {
+    static boolean sameLength(int[][] myMatrix) {
         boolean same = false;
         for (int[] matrix : myMatrix) {
             same = myMatrix[0].length == matrix.length;
