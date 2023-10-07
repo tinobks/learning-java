@@ -4,15 +4,16 @@ riempita con dei valori a vostro piacimento e restituisca la somma degli element
 public class Array4 {
     public static int matrixSum(int[][] myMatrix) {
         int sum = 0;
-        for (int i = 0; i < myMatrix.length; i++) {
-            //aggiungo a sum i primi elementi di ogni array
-            sum += myMatrix[i][0];
+        for (int num : myMatrix[0]) {
+            //aggiungo a sum gli elementi del PRIMO array (elementi prima riga della matrice)
+            sum += num;
         }
         return sum;
     }
 
     public static void main(String[] args) {
-        int[][] testMatrix = { {1, 2, 3, 4}, {5, 6, 7}, {8,9} };
-        System.out.println(matrixSum(testMatrix));
+        int[][] testMatrix = { {1, 2, 3, 4}, {5, 6, 7, 10}, {8, 9, 1, 3} };
+        //somma di 1+2+3+4 = 10
+        System.out.println("Somma degli elementi della prima riga: " +matrixSum(testMatrix));
     }
 }

@@ -3,14 +3,14 @@ Questo metodo dovrà poi stampare tutte le occorrenze del carattere 'a' o 0 in c
 
 public class Array2 {
     public static void charArray() {
-        char[] myArray = {'a','!','b','c','@','d','e','a','f','a','h','i','a','j'};
+        char[] myArray = {'a','!','b','c','@','d','e','f','h','i','j','a'};
+        int counterA = 0;
         for (char myChar : myArray) {
             if (myChar == 'a') {
-                System.out.println(myChar);
-            } else {
-                System.out.println(0);
+                counterA += 1;
             }
         }
+        System.out.println("Occorrenze del carattere 'a': " + counterA);
     }
 
     public static void main(String[] args) {
