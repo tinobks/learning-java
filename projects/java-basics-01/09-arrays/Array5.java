@@ -6,8 +6,6 @@ Matrice risultato:
 2 5
 3 6   */
 
-import java.util.ArrayList;
-
 public class Array5 {
 
     //metodo per stampare la matrice
