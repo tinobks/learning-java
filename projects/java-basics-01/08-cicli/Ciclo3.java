@@ -13,6 +13,6 @@ public class Ciclo3 {
     }
 
     public static void main(String[] args) {
-        reverse(6,3);
+        reverse(6,8);
     }
 }

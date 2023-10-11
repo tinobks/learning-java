@@ -16,6 +16,11 @@
       <sourceFolder url="file://$MODULE_DIR$/projects/java-basics-01/09-arrays" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-02/Es1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-02/Es2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-advanced-03/01-ereditarieta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-advanced-03/02-ereditarieta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-advanced-03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-advanced-03/02-ereditarieta-polimorfismo-abstract" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/java-oop-advanced-03/03-interfacce" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
