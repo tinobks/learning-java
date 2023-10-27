@@ -18,10 +18,7 @@ public class Main {
         //stampo gli studenti dentro l array
         System.out.println("Lista Studenti prima dell'arrivo di nuovi studenti:");
         int counter = 1;
-        for (Student studente : myStudents) {
-            System.out.println("Studente " + counter +": " + studente.getName() + ", età: " + studente.getAge());
-            counter++;
-        }
+        studentPrintWithCounter(myStudents);
 
         //aggiungo 4 elementi e stampo di nuovo l arraylist di studenti aggiornato
         myStudents.add(new Student("Spippo", 24));
@@ -30,7 +27,12 @@ public class Main {
         myStudents.add(new Student("Jastin", 23));
         System.out.println("-----------------------------------------------");
         System.out.println("Lista Studenti dopo l'arrivo di nuovi studenti:");
-        counter = 1;
+        studentPrintWithCounter(myStudents);
+    }
+
+    //funzione che stampa una lista di student con un counter Studente x
+    public static void studentPrintWithCounter(ArrayList<Student> myStudents) {
+        int counter = 1;
         for (Student studente : myStudents) {
             System.out.println("Studente " + counter +": " + studente.getName() + ", età: " + studente.getAge());
             counter++;
