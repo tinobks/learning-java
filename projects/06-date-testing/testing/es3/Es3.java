@@ -19,6 +19,7 @@ public class Es3 {
         System.out.println(dataFormattata);
     }*/
 
+    //creo metodo per poter fare test
     public String dateFormat(OffsetDateTime myDate) {
         if (myDate == null) {
             return null;

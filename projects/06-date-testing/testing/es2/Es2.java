@@ -26,6 +26,7 @@ public class Es2 {
         System.out.println("Data SHORT: " + dateShort);
     }*/
 
+    //creo metodi per ogni formattazione per fare i test
     public String dateFull(OffsetDateTime myDate) {
         return myDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
     }
