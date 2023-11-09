@@ -3,6 +3,7 @@ package testing.es3;
 import org.junit.jupiter.api.Test;
 
 import java.time.OffsetDateTime;
+import java.time.format.DateTimeParseException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,15 +13,22 @@ class Es3Test {
 
     @Test
     void dateFormat() {
-        OffsetDateTime myDate = OffsetDateTime.parse("2023-03-01T13:00:00Z");
-        String result = testing.dateFormat(myDate);
+        String date = "2023-03-01T13:00:00Z";
+        String result = testing.dateFormat(date);
         assertEquals("01 marzo 2023", result);
     }
 
     @Test
     void dateFormatNull() {
-        OffsetDateTime myDate = null;
-        String result = testing.dateFormat(myDate);
-        assertNull(result);
+        String date = null;
+        String result = testing.dateFormat(date);
+        assertEquals("Can't parse null", result);
+    }
+
+    @Test
+    void dateFormatWrongString() {
+        String date = "-03-01T13:00:00Z";
+        Exception e = assertThrows(DateTimeParseException.class,()->testing.dateFormat(date));
+        assertEquals("Can't parse, give a correct String",e.getMessage());
     }
 }

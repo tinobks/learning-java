@@ -16,7 +16,17 @@ class Switch1Test {
     }
 
     @org.junit.jupiter.api.Test
-    void dayOfWeek_numNotBetween1and7() {
+    void dayOfWeek_numAbove7() {
         assertEquals("ERROR: Insert numbers only between 1 and 7.", Switch1.DayOfWeek(8));
+    }
+
+    @org.junit.jupiter.api.Test
+    void dayOfWeek_numUnder1() {
+        assertEquals("ERROR: Insert numbers only between 1 and 7.", Switch1.DayOfWeek(0));
+    }
+
+    @org.junit.jupiter.api.Test
+    void dayOfWeek_numNegative() {
+        assertEquals("ERROR: Insert numbers only between 1 and 7.", Switch1.DayOfWeek(-1));
     }
 }

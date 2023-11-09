@@ -5,6 +5,7 @@ package testing.es2;
 
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.time.format.FormatStyle;
 
 public class Es2 {
@@ -27,15 +28,45 @@ public class Es2 {
     }*/
 
     //creo metodi per ogni formattazione per fare i test
-    public String dateFull(OffsetDateTime myDate) {
-        return myDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
+    public String dateFull(String myDate) throws DateTimeParseException {
+        try {
+            if (myDate != null) {
+                OffsetDateTime datetime = OffsetDateTime.parse(myDate);
+                return datetime.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
+
+            } else {
+                return "Cannot parse null";
+            }
+        } catch (DateTimeParseException e) {
+            throw new DateTimeParseException("Wrong String", myDate, e.getErrorIndex());
+        }
     }
 
-    public String dateMedium(OffsetDateTime myDate) {
-        return myDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
+    public String dateMedium(String myDate) throws DateTimeParseException {
+        try {
+            if (myDate != null) {
+                OffsetDateTime datetime = OffsetDateTime.parse(myDate);
+                return datetime.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
+
+            } else {
+                return "Cannot parse null";
+            }
+        } catch (DateTimeParseException e) {
+            throw new DateTimeParseException("Wrong String", myDate, e.getErrorIndex());
+        }
     }
 
-    public String dateShort(OffsetDateTime myDate) {
-        return myDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
+    public String dateShort(String myDate) throws DateTimeParseException {
+        try {
+            if (myDate != null) {
+                OffsetDateTime datetime = OffsetDateTime.parse(myDate);
+                return datetime.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
+
+            } else {
+                return "Cannot parse null";
+            }
+        } catch (DateTimeParseException e) {
+            throw new DateTimeParseException("Wrong String", myDate, e.getErrorIndex());
+        }
     }
 }
