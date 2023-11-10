@@ -10,21 +10,22 @@ package testing.es4;
 import java.time.DayOfWeek;
 import java.time.Month;
 import java.time.OffsetDateTime;
+import java.time.format.DateTimeParseException;
 
 public class Es4 {
-    /*public static void main(String[] args) {
-        //creo oggetto OffsetDateTime
-        OffsetDateTime myDate = OffsetDateTime.parse("2023-03-01T13:00:00Z");
-        System.out.println(myDate);
 
-        //ottengo e stampo anno, mese ecc. usando i metodi getYear ecc.
-        //ho usato direttamente i metodi al posto di creare le variabili in quanto
-        //i metodi hanno gia i nomi che fanno capire chiaramente cosa ottengo
-        System.out.println("Year: " + myDate.getYear() + "\nMonth: " + myDate.getMonth() +
-                "\nDay: " + myDate.getDayOfMonth() + "\nDay of Week: " + myDate.getDayOfWeek());*/
+    public OffsetDateTime stringParser(String date) throws DateTimeParseException {
+        try {
+            if (date != null) {
+                return OffsetDateTime.parse(date);
+            } else {
+                return null;
+            }
+        } catch (DateTimeParseException e) {
+            throw new DateTimeParseException("Can't parse, give a correct String", date, e.getErrorIndex());
+        }
+    }
 
-
-    //creo metodi con cui posso fare test
     public int year(OffsetDateTime myDate) {
         return myDate.getYear();
     }
