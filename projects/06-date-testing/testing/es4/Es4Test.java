@@ -27,6 +27,11 @@ class Es4Test {
         Exception e = assertThrows(DateTimeParseException.class,()-> testing.stringParser(date));
         assertEquals("Can't parse, give a correct String",e.getMessage());
     }
+    @Test
+    void stringParserEmptyString() {
+        String date = "";
+        assertNull(testing.stringParser(date),"empty string, can't parse");
+    }
 
     @Test
     void year() {

@@ -16,7 +16,7 @@ public class Es4 {
 
     public OffsetDateTime stringParser(String date) throws DateTimeParseException {
         try {
-            if (date != null) {
+            if (date != null && !date.isEmpty()) {
                 return OffsetDateTime.parse(date);
             } else {
                 return null;
