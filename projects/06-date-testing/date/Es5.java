@@ -12,22 +12,35 @@ import java.time.format.DateTimeFormatter;
 
 public class Es5 {
     public static void main(String[] args) {
-        //creo 2 date e le formatto
-        OffsetDateTime data1 = OffsetDateTime.parse("2023-03-01T13:00:00Z");
-        OffsetDateTime data2 = OffsetDateTime.parse("2024-03-01T13:00:00Z");
-        String data1format = data1.format(DateTimeFormatter.ofPattern("dd/MM/yy"));
-        String data2format = data2.format(DateTimeFormatter.ofPattern("dd/MM/yy"));
+        //creo 2 stringhe e faccio parsing
+        String data1toParse = "2023-03-01T13:00:00Z";
+        String data2toParse = "2024-03-01T13:00:00Z";
+        OffsetDateTime data1 = stringParser(data1toParse);
+        OffsetDateTime data2 = stringParser(data2toParse);
 
         //verifico che data1 e' prima di data2
-        boolean date1Before = data1.isBefore(data2);
-        System.out.println("Is " + data1format + " before " + data2format + " ? " + date1Before);
+        System.out.println("Is " + data1 + " before " + data2 + " ? " + date1Before(data1,data2));
 
         //verifico che data2 e' dopo data1
-        boolean date2After = data2.isAfter(data1);
-        System.out.println("Is " + data2format + " after " + data1format + " ? " + date2After);
+        System.out.println("Is " + data2 + " after " + data1 + " ? " + date2After(data1,data2));
 
         //verifico se le due date sono uguali ad ora
-        boolean dateEquals = data1.isEqual(data2);
-        System.out.println("Is " + data2format + " equal to " + data1format + " ? " + dateEquals);
+        System.out.println("Is " + data2 + " equal to " + data1 + " ? " + dateEquals(data1,data2));
+    }
+
+    public static OffsetDateTime stringParser(String date) {
+        return OffsetDateTime.parse(date);
+    }
+
+    public static boolean date1Before(OffsetDateTime date1, OffsetDateTime date2) {
+        return date1.isBefore(date2);
+    }
+
+    public static boolean date2After(OffsetDateTime date1, OffsetDateTime date2) {
+        return date2.isAfter(date1);
+    }
+
+    public static boolean dateEquals(OffsetDateTime date1, OffsetDateTime date2) {
+        return date1.isEqual(date2);
     }
 }
