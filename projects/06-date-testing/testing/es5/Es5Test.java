@@ -14,7 +14,7 @@ class Es5Test {
     @Test
     void stringParserRightString() {
         String date = "2023-03-01T13:00:00Z";
-        assertNotNull(testing.stringParser(date),"this is a correct string so i obtained a correct parsing");
+        assertEquals("2023-03-01T13:00Z",testing.stringParser(date).toString());
     }
     @Test
     void stringParserNull() {
