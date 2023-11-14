@@ -4,7 +4,7 @@ package bigdecimal;
 //Il tipo di operazione, i due dati in input e il risultato dovranno essere stampati a schermo
 
 //enum per scegliere tipo di operazione da eseguire
-public enum Operazione {
+public enum OperazioneEnum {
     ADDIZIONE,
     SOTTRAZIONE,
     MOLTIPLICAZIONE,
